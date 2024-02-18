@@ -10,7 +10,7 @@ const instance = axios.create({
 
 instance.interceptors.request.use(
   (config) => {
-    if (config.method == 'GET') {
+    if (config.method?.toLocaleLowerCase() == 'get') {
       config.params = { ...config.params, key: SECRET_KEY }
     }
 

@@ -1,0 +1,17 @@
+{
+  "schema_version": "v0.0.1",
+  "name_for_human": "出行助手_namelessyuu",
+  "name_for_model": "travel_helper",
+  "description_for_human": "接入天气和出行信息，结合大模型完成更精确的出行分析",
+  "description_for_model": "可以查询天气信息和地理信息，回答用户有关地理和天气的问题",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "http://localhost:9000/.well-known/openapi.yaml"
+  },
+  "logo_url": "http://127.0.0.1:9000/logo.png",
+  "contact_email": "support@example.com",
+  "legal_info_url": "http://www.example.com/legal"
+}

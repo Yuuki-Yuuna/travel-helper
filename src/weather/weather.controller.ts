@@ -10,13 +10,13 @@ export class WeatherController {
     private readonly weatherService: WeatherService
   ) {}
 
-  @Get('report')
+  @Get('info')
   async weatherInfo(
     @Query('city') city: string, // 城市名字或地址
     @Query('extensions') extensions?: string
   ): Promise<IResponse> {
     const { geocodes } = await this.geographyService.geographyCode(city)
-    if (!geocodes.length) {
+    if (!geocodes?.length) {
       return { status: 0, info: '没有找到区域' }
     }
     const { adcode } = geocodes[0]

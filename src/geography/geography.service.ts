@@ -6,7 +6,7 @@ import { GeographyCodeReponse } from './interface/geography-code.interface'
 @Injectable()
 export class GeographyService {
   async geographyCode(address: string, city?: string) {
-    const response = await request<GeographyCodeReponse>(GEO_CODE_GEO, {
+    const response = await request.get<GeographyCodeReponse>(GEO_CODE_GEO, {
       params: { address, city }
     })
 
