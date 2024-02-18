@@ -25,90 +25,89 @@ paths:
       responses:
         '200':
           description: 获取天气信息成功
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/weatherInfo'
-
-components:
-  schemas:
-    weatherInfo:
-      type: object
-      properties:
-        lives:
-          type: array
-          description: 实况天气数据信息
-          items:
-            type: object
-            properties:
-              province:
-                type: string
-                description: 省份名
-              city:
-                type: string
-                description: 城市名
-              reporttime:
-                type: string
-                description: 数据发布的时间
-              weather:
-                type: string
-                description: 天气现象
-              temperature:
-                type: number
-                description: 实时气温，单位：摄氏度
-              humidity:
-                type: number
-                description: 空气湿度，百分比
-              winddirection:
-                type: string
-                description: 风向描述
-              windpower:
-                type: string
-                description: 风力级别，单位：级
-        forecast:
-          type: object
-          description: 预报天气信息数据
-          properties:
-            province:
-              type: string
-              description: 省份名
-            city:
-              type: string
-              description: 城市名
-            reporttime:
-              type: string
-              description: 数据发布的时间
-            casts:
-              type: array
-              description: 预报数据list结构，元素cast,按顺序为当天、第二天、第三天的预报数据
-              items:
-                date:
-                  type: string
-                  description: 日期
-                week:
-                  type: number
-                  description: 星期几
-                dayweather:
-                  type: string
-                  description: 白天天气现象
-                nightweather:
-                  type: string
-                  description: 晚上天气现象
-                daytemp:
-                  type: number
-                  description: 白天温度
-                nighttemp:
-                  type: number
-                  description: 晚上温度
-                daywind:
-                  type: string
-                  description: 白天风向
-                nightwind:
-                  type: string
-                  description: 晚上风向
-                daypower:
-                  type: string
-                  description: 白天风力
-                nightpower:
-                  type: string
-                  description: 晚上风力
+#           content:
+#             application/json:
+#               schema:
+#                 $ref: '#/components/schemas/weatherInfo'
+# components:
+#   schemas:
+#     weatherInfo:
+#       type: object
+#       properties:
+#         lives:
+#           type: array
+#           description: 实况天气数据信息
+#           items:
+#             type: object
+#             properties:
+#               province:
+#                 type: string
+#                 description: 省份名
+#               city:
+#                 type: string
+#                 description: 城市名
+#               reporttime:
+#                 type: string
+#                 description: 数据发布的时间
+#               weather:
+#                 type: string
+#                 description: 天气现象
+#               temperature:
+#                 type: number
+#                 description: 实时气温，单位：摄氏度
+#               humidity:
+#                 type: number
+#                 description: 空气湿度，百分比
+#               winddirection:
+#                 type: string
+#                 description: 风向描述
+#               windpower:
+#                 type: string
+#                 description: 风力级别，单位：级
+#         forecast:
+#           type: object
+#           description: 预报天气信息数据
+#           properties:
+#             province:
+#               type: string
+#               description: 省份名
+#             city:
+#               type: string
+#               description: 城市名
+#             reporttime:
+#               type: string
+#               description: 数据发布的时间
+#             casts:
+#               type: array
+#               description: 预报数据list结构，元素cast,按顺序为当天、第二天、第三天的预报数据
+#               items:
+#                 date:
+#                   type: string
+#                   description: 日期
+#                 week:
+#                   type: number
+#                   description: 星期几
+#                 dayweather:
+#                   type: string
+#                   description: 白天天气现象
+#                 nightweather:
+#                   type: string
+#                   description: 晚上天气现象
+#                 daytemp:
+#                   type: number
+#                   description: 白天温度
+#                 nighttemp:
+#                   type: number
+#                   description: 晚上温度
+#                 daywind:
+#                   type: string
+#                   description: 白天风向
+#                 nightwind:
+#                   type: string
+#                   description: 晚上风向
+#                 daypower:
+#                   type: string
+#                   description: 白天风力
+#                 nightpower:
+#                   type: string
+#                   description: 晚上风力
