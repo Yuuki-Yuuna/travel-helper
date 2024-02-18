@@ -39,10 +39,10 @@ $ pnpm install
 $ pnpm run start
 
 # watch mode
-$ pnpm run start:dev
+$ pnpm run dev
 
 # production mode
-$ pnpm run start:prod
+$ pnpm run prod
 ```
 
 ## Support

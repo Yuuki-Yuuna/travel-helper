@@ -2,7 +2,7 @@
   "name": "travel-helper",
   "private": true,
   "version": "0.0.1",
-  "description": "文心一言旅行助手插件",
+  "description": "文心一言出行助手插件",
   "scripts": {
     "build": "nest build",
     "start": "nest start",
@@ -16,6 +16,7 @@
     "@nestjs/common": "^10.0.0",
     "@nestjs/core": "^10.0.0",
     "@nestjs/platform-express": "^10.0.0",
+    "axios": "^1.6.7",
     "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.1"
   },
